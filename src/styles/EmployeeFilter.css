@@ -1,0 +1,49 @@
+.employee-filter {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    /* background-color: lightgreen; */
+  }
+  
+  .filter-button {
+    padding: 10px 40px;
+    margin-left: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .filter-button.active {
+    background-color: transparent;
+    color: black;
+  }
+  
+  .filter-button.all {
+    background-color: #A470E9;
+    color: white;
+    border-radius: 15PX;
+  }
+  
+  .filter-button.inactive {
+    background-color: transparent;
+    color: black;
+  }
+  
+  .filter-button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .employee-filter {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .filter-button {
+      padding: 8px 16px;
+      margin: 5px;
+    }
+  }
+  

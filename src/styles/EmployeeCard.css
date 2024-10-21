@@ -1,0 +1,43 @@
+.employee-card {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom right, #E5DCFB, #FAFBFD, #F7EFFE);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .employee-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .block-btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  .details-btn{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .employee-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .employee-image {
+      margin-bottom: 10px;
+    }
+  }
+  
